@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products | Online Shopping Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="images/logo.png" width = "125px" alt="logo" >
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Account</a></li>
+                        <li><a href="products.html">Product</a></li>
+                        <li><a href="cart.html">Cart</a></li>
+                        <li><a href="#">About</a></li>
+                    </ul>
+                </nav>
+                <img src="images/cart.png" width="30px" height="30px">
+                <img src="images/menu.png" class="menu" onclick="menu()">
+            </div>
+            
+        </div>
+   
+    
+    <div class="section cart">
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Subtotal</th>
+            </tr>
+            <tr>
+
+                <td>
+                    <div class="cart-info">
+                        <img src="images/buy-3.jpg" alt="">
+                       <div>
+                        <p>Red T-Shirt by HRX</p>
+                        <small>Price: $100.00</small> <br>
+                        <a href="" class="btn remove">Remove</a>
+                       </div>
+                    </div>
+                    
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>$100.00</td>
+            </tr>
+            <tr>
+
+                <td>
+                    <div class="cart-info">
+                        <img src="images/buy-2.jpg" alt="">
+                       <div>
+                        <p>Red T-Shirt by HRX</p>
+                        <small>Price: $100.00</small> <br>
+                        <a href="" class="btn remove">Remove</a>
+                       </div>
+                    </div>
+                    
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>$100.00</td>
+            </tr>
+            <tr>
+
+                <td>
+                    <div class="cart-info">
+                        <img src="images/buy-1.jpg" alt="">
+                       <div>
+                        <p>Red T-Shirt by HRX</p>
+                        <small>Price: $100.00</small> <br>
+                        <a href="" class="btn remove">Remove</a>
+                       </div>
+                    </div>
+                    
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>$100.00</td>
+            </tr>
+        </table>
+        <div class="total">
+            <table>
+                <tr>
+                    <td>Tax</td>
+                    <td>$30.00</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td>$400.00</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    
+
+
+<!-- ------------- footer ---------------- -->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="f-col-1">
+                <h3>Download Our App</h3>
+                <p>Download app for Android and ios mobile phone.</p>
+                <div class="app-logo">
+                    <img src="images/app-store.png" alt="">
+                    <img src="images/play-store.png" alt="">
+                </div>
+            </div>
+            <div class="f-col-2">
+                <h3>Visit Our Website</h3>
+                <img src="">
+                <p>For more information! Please visit our website. </p>
+            </div>
+            <div class="f-col-3">
+                <h3>Useful links</h3>
+                <ul>
+                    <li>Join Affiliate</li>
+                    <li>Return Policy</li>
+                    <li>Blog Post</li>
+                    <li>Coupons</li>
+                </ul>
+            </div>
+            <div class="f-col-4">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li>Youtube</li>
+                    <li>Facebook</li>
+                    <li>Instagram</li>
+                    <li>Twitter</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">-- Copyright 2023 --</p>
+    </div>
+</div>
+
+<script>
+var MenuItems = document.getElementById("MenuItems");
+MenuItems.style.maxHeight = "0px";
+function menu(){
+    if(MenuItems.style.maxHeight == "0px")
+    {
+        MenuItems.style.maxHeight = "200px";
+    }
+    else{
+        MenuItems.style.maxHeight = "0px";
+    }
+}
+</script>
+</body>
+</html>
